@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="P3Suite" >
+
+    <test name="RegressionTests">
+        <parameter name="url" value="https://www1.my.commbiz.commbank.com.au/logon/usermaintenance/login.aspx"/>
+        <parameter name="userName" value="commbankExam"/>
+        <parameter name="password" value="urselected"/>
+        <parameter name="secretAnswer1" value="abcd"/>
+        <parameter name="secretAnswer2" value="efgh"/>
+        <classes>
+            <class name="com.exam.regressionTests.TestExam">
+                <methods>
+                   <include name="testRegisterOnlineNow"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
